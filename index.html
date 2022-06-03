@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Toggle Switch avec Tailwind CSS</title>
+</head>
+
+<body class="h-screen flex justify-center items-center bg-neutral-100">
+   <form>
+
+       <label for="toggle" class="relative flex justify-between items-center p-2 border">
+           Activer les notifications
+        
+           <span class="sr-only">Basculer</span>
+
+           <input type="checkbox" name="toggle" id="toggle" class="absolute top-0 left-0 w-full h-full peer appearance-none cursor-pointer">
+
+           <span class=" bg-gray-300 w-12 h-7 rounded-full flex  flex-shrink-0 items-center after:bg-white after:w-5 after:h-5 after:rounded-full p-1 ml-4  peer-checked:bg-green-500 peer-checked:after:translate-x-5 ease-in-out duration-300 after:duration-300"></span>
+       </label>
+
+   </form>
+</body>
+
+</html>
